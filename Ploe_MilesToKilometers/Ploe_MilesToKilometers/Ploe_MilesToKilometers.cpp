@@ -21,7 +21,7 @@ int main()
 
 	kilometer = miles * 1.609;
 
-	cout << "There are " << kilometer << " kilometers in " << miles << " miles" << endl;
+	cout  << setw(15) << setfill('~') << setprecision(3) << "There are " << kilometer << " kilometers in " << miles << " miles" << endl;
 	cout << endl;
 	
     return 0;
