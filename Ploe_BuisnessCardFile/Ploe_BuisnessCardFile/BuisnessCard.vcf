@@ -1,0 +1,9 @@
+BEGIN:VCARD
+FN:Audie Ploe
+TITLE:Goat soothing professional
+TEL;TYPE=work,voice;VALUE=uri:1-800-PET-GOAT
+EMAIL:Ipetgoats@gmail.com
+ADR;TYPE=WORK:;;237 Goat Hill;Texas;USA
+ORG: Goat soothers
+WEB;TYPE=WORK:;; www.GoatBoys.com
+END:VCARD
