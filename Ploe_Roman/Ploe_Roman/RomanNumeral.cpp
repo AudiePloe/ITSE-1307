@@ -49,10 +49,8 @@ void RomanNumeral::set(std::string strpNumber)
 	double dblCurrent = 0.0;
 	double dblLast = 1000.0;
 
-
 	for (int intIndex = 0; intIndex < strpNumber.size(); intIndex++) {
 
-		//strpNumber.at(intIndex) = std::tolower(strpNumber.at(intIndex));
 		switch (strpNumber.at(intIndex)) {
 		case 'M':
 			dblCurrent = 1000;
@@ -75,6 +73,8 @@ void RomanNumeral::set(std::string strpNumber)
 		case 'I':
 			dblCurrent = 1;
 			break;
+		default:
+			std::cerr << "Invalid roman numeral" << std::endl;
 		}
 		if (dblLast < dblCurrent)
 		{
@@ -87,10 +87,4 @@ void RomanNumeral::set(std::string strpNumber)
 		dblLast = dblCurrent;
 	}
 	set(dblSum);
-}
-
-
-bool RomanNumeral::isEqual(RomanNumeral *objpOther)
-{
-	return (this->getValue() == objpOther->getValue());
 }
