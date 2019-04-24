@@ -15,5 +15,4 @@ public:
 	std::string getString();
 	void set(float dblNumber);
 	void set(std::string strNumber);
-	bool isEqual(RomanNumeral *objpOther);
 };
